@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/datePicker"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+
+        app:headerColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionColor="@color/colorAccent"
+        app:todayLabelColor="@color/red" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/addNoteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <EditText
+        android:id="@+id/noteEditText"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="Click để nhập note"
+        app:layout_constraintBottom_toTopOf="@id/addNoteButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datePicker" />
+
+</android.support.constraint.ConstraintLayout>
